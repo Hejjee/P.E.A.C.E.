@@ -1,5 +1,4 @@
-/* General resets & base styling */
-* {
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,25 +10,25 @@
     color: #333;
     line-height: 1.6;
   }
-  
-  .page-header {
-    background: #f8f8f8;
-    padding: 2rem 2rem 2rem 4rem;
-    text-align: center;
-    margin-bottom: 2rem;
+
+
+  header {
+    width: 100%;
+    background-color: #f2ab91; /* The peach color */
   }
   
-  /* Navbar */
   .navbar {
+    /* Center content horizontally with a max width */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f2ab91; /* Dark peach */
+    max-width: 1200px;       /* or any width you prefer */
+    margin: 0 auto;
     padding: 1rem 2rem;
   }
   
   .logo {
-    color: #333; /* Dark text for contrast on lighter background */
+    color: #333;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -42,7 +41,7 @@
   }
   
   .nav-links li a {
-    color: #333; 
+    color: #333;
     text-decoration: none;
     padding: 0.5rem;
     transition: background 0.3s;
@@ -54,7 +53,23 @@
     border-radius: 4px;
   }
   
-  /* Hero Section (Homepage) */
+  /* =========================
+     Page Header Sections
+     ========================= */
+  .page-header {
+    background: #f8f8f8;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .page-header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* =========================
+     Hero (Homepage)
+     ========================= */
   .hero {
     background: #f8f8f8;
     padding: 4rem 2rem;
@@ -74,7 +89,7 @@
   /* Call-to-action button */
   .cta-button {
     background-color: #f2ab91;
-    color: #333; 
+    color: #333;
     padding: 0.75rem 1.5rem;
     border-radius: 25px;
     text-decoration: none;
@@ -85,6 +100,9 @@
     background-color: #dd896d; /* Darker peach for hover */
   }
   
+  /* =========================
+     Common Section Wrappers
+     ========================= */
   /* Intro and other sections */
   .intro {
     max-width: 1000px;
@@ -92,24 +110,13 @@
     padding: 0 1rem;
   }
   
-  /* 
-    If you have more pages (materials, events, support, profile), 
-    you can keep these classes for consistent layout:
-    .materials-content,
-    .events-list,
-    .support-list,
-    .profile-content {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-  */
-  /* Materials list/container */
-.materials-content {
+  /* Materials container */
+  .materials-content {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 0 1rem;
   }
+  
   .materials-content article {
     background: #fafafa;
     margin-bottom: 1rem;
@@ -117,12 +124,13 @@
     border-radius: 4px;
   }
   
-  /* Events list/container */
+  /* Events container */
   .events-list {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 0 1rem;
   }
+  
   .event-card {
     background: #fafafa;
     margin-bottom: 1rem;
@@ -130,12 +138,13 @@
     border-radius: 4px;
   }
   
-  /* Support list/container */
+  /* Support container */
   .support-list {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 0 1rem;
   }
+  
   .support-list article {
     background: #fafafa;
     margin-bottom: 1rem;
@@ -143,7 +152,7 @@
     border-radius: 4px;
   }
   
-  /* Profile content */
+  /* Profile container */
   .profile-content {
     max-width: 1000px;
     margin: 2rem auto;
@@ -153,9 +162,11 @@
     gap: 2rem;
     align-items: center;
   }
+  
   .user-info {
     text-align: center;
   }
+  
   .profile-actions button {
     background-color: #f2ab91;
     color: #333;
@@ -165,12 +176,15 @@
     border-radius: 4px;
     cursor: pointer;
   }
+  
   .profile-actions button:hover {
     background-color: #dd896d;
     color: #fff;
   }
   
-  /* Link button (shared) */
+  /* =========================
+     Link Button (Shared)
+     ========================= */
   .link-button {
     display: inline-block;
     margin-top: 0.5rem;
@@ -181,16 +195,50 @@
     border-radius: 4px;
     transition: background 0.3s;
   }
+  
   .link-button:hover {
     background-color: #dd896d;
     color: #fff;
   }
   
-  /* Footer */
+  /* =========================
+     Footer
+     ========================= */
   footer {
     text-align: center;
     padding: 1rem;
     background: #f8f8f8;
     margin-top: 2rem;
+  }
+  
+  /* =========================
+     Media Queries (Responsive)
+     ========================= */
+  @media (max-width: 768px) {
+    /* Stack navbar items on smaller screens */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  
+    /* Reduce hero padding for smaller screens */
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 1.6rem;
+    }
+  
+    .hero p {
+      font-size: 0.95rem;
+    }
   }
   
