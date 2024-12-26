@@ -1,0 +1,196 @@
+/* General resets & base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .page-header {
+    background: #f8f8f8;
+    padding: 2rem 2rem 2rem 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2ab91; /* Dark peach */
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    color: #333; /* Dark text for contrast on lighter background */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    color: #333; 
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background 0.3s;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    background-color: #dd896d; /* Darker peach on hover */
+    border-radius: 4px;
+  }
+  
+  /* Hero Section (Homepage) */
+  .hero {
+    background: #f8f8f8;
+    padding: 4rem 2rem;
+    text-align: center;  /* Centers the hero text */
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    max-width: 600px;
+    margin: 0 auto 2rem auto; /* Centers paragraph text */
+  }
+  
+  /* Call-to-action button */
+  .cta-button {
+    background-color: #f2ab91;
+    color: #333; 
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #dd896d; /* Darker peach for hover */
+  }
+  
+  /* Intro and other sections */
+  .intro {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* 
+    If you have more pages (materials, events, support, profile), 
+    you can keep these classes for consistent layout:
+    .materials-content,
+    .events-list,
+    .support-list,
+    .profile-content {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+  */
+  /* Materials list/container */
+.materials-content {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .materials-content article {
+    background: #fafafa;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  /* Events list/container */
+  .events-list {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .event-card {
+    background: #fafafa;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  /* Support list/container */
+  .support-list {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .support-list article {
+    background: #fafafa;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  /* Profile content */
+  .profile-content {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .user-info {
+    text-align: center;
+  }
+  .profile-actions button {
+    background-color: #f2ab91;
+    color: #333;
+    border: none;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .profile-actions button:hover {
+    background-color: #dd896d;
+    color: #fff;
+  }
+  
+  /* Link button (shared) */
+  .link-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #f2ab91;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  .link-button:hover {
+    background-color: #dd896d;
+    color: #fff;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f8f8f8;
+    margin-top: 2rem;
+  }
+  
